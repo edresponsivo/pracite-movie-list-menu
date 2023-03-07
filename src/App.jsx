@@ -32,9 +32,10 @@ const App = () => {
   return (
     <main>
       <section className="movies section">
-        <section className="movies title">
+        <section className="title">
           <h2>Movies List</h2>
           <div className="underline"></div>
+          <p>To filter by movie genres click on the genre link</p>
         </section>
         <GenresMenu genres={genres} filterGenres={filterGenres} />
         <Movies movies={movies} />

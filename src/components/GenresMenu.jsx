@@ -1,5 +1,5 @@
 const GenresMenu = ({ genres, filterGenres }) => {
-    // console.log(genres);
+  // console.log(genres);
   return (
     <div className="btn-container">
       {genres.map((genre) => (
