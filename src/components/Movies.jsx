@@ -1,11 +1,12 @@
 import Movie from "./Movie";
 
-const Movies = () => {
+const Movies = ({ movies }) => {
+  // console.log(props.movies);
   return (
     <section className="section-center">
-      <Movie />
-      <Movie />
-      <Movie />
+      {movies.map((movie) => (
+        <Movie key={movie.id} movie={movie} />
+      ))}
     </section>
   );
 };
